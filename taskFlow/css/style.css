@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+
+/* 🔥 Main Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* 🔥 Header */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #00ffcc;
+}
+
+/* ➕ Input Section */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#add-btn {
+    padding: 12px 20px;
+    background-color: #00ffcc;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#add-btn:hover {
+    background-color: #00c9a7;
+}
+
+/* 📋 Task Section */
+.task-section h2 {
+    margin-bottom: 15px;
+}
+
+/* 📌 Task List */
+#task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 🧩 Task Card */
+.task {
+    background-color: #1a1a1a;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Task Text */
+.task span {
+    font-size: 16px;
+}
+
+/* Buttons */
+.task button {
+    margin-left: 8px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Complete */
+.complete-btn {
+    background-color: #00ffcc;
+}
+
+/* Delete */
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+}
