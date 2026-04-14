@@ -59,6 +59,12 @@ taskflow/
 
 ---
 
+Day 1–2 → Core logic (DONE / almost done)
+Day 3–5 → Features (delete/edit/filter)
+Day 6–7 → localStorage + polish
+Day 8+ → Kanban + advanced UI
+
+
 ## ⚙️ How the Application Works
 
 1. User enters a task in the input field
