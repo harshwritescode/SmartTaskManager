@@ -27,7 +27,7 @@ function renderTask(){
         deleteButton.innerText="Delete";
 
         const editButton=document.createElement('button');
-        edditButton.innerText="Edit";
+        editButton.innerText="Edit";
 
         deleteButton.addEventListener("click",function (){
              deleteTask(task.id);
