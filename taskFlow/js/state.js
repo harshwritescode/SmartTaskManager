@@ -23,7 +23,7 @@ function deleteTask(id){
 
 
 function toggleTaskStatus(id){
-    tasks=task.map((task)=>{
+    tasks=tasks.map((task)=>{
   if(task.id==id){
     return {
         ...tasks,
@@ -32,6 +32,19 @@ function toggleTaskStatus(id){
   }
   return task;
     })
+}
+
+
+function editTask(id,newText){
+   tasks=tasks.map((task)=>{
+       if(task.id==id){
+        return {
+          ...tasks,
+          text:newText
+        }
+       }
+       return tasks;
+   })
 }
 
 function getTasks() {
