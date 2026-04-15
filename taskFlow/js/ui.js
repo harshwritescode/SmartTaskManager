@@ -23,7 +23,15 @@ function renderTask(){
         column2.innerText=task.status;
 
         const column3=document.createElement('td');
-        column3.innerText="DELETE";
+        const deleteButton=document.createElement('button');
+        deleteButton.innerText="Delete";
+
+        deleteButton.addEventListener("click",function (){
+             deleteTask(task.id);
+             renderTask();
+        });
+
+         column3.appendChild(deleteButton);
 
         row.appendChild(column1);
         row.appendChild(column2);
