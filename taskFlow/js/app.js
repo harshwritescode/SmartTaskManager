@@ -1,22 +1,24 @@
-const input=document.getElementById('task-input');
-const button_value=document.getElementById('add-btn');
+
+const input = document.getElementById('task-input');
+const button_value = document.getElementById('add-btn');
 
 
-button_value.addEventListener("click",function(e){
-const value=input.value;
-if(value === ""){
-    alert("Task can't be empty");
-    return ;
-}
-addTask(value);
+loadTask();
 renderTask();
-console.log(tasks);
-
-input.value="";
 
 
+button_value.addEventListener("click", function () {
 
-})
+    const value = input.value;
 
+    if (value === "") {
+        alert("Task can't be empty");
+        return;
+    }
 
+    addTask(value);
+    taskStorage();   // save
+    renderTask();    // update UI
 
+    input.value = "";
+});
