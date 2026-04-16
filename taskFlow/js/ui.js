@@ -29,6 +29,9 @@ function renderTask(){
         const editButton=document.createElement('button');
         editButton.innerText="Edit";
 
+        const todoButton=document.createElement('button');
+        todoButton.innerText=task.status==="done" ? "Undo" : "Done";
+
         deleteButton.addEventListener("click",function (){
              deleteTask(task.id);
              renderTask();
@@ -40,9 +43,15 @@ function renderTask(){
                 editTask(task.id, newText);
                 renderTask();
         })
+        todoButton.addEventListener("click", function () {
+
+         toggleTaskStatus(task.id);
+            renderTask();
+        });
 
          column3.appendChild(editButton);
          column3.appendChild(deleteButton);
+         column3.appendChild(todoButton);
 
         row.appendChild(column1);
         row.appendChild(column2);
