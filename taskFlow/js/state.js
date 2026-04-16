@@ -52,7 +52,7 @@ function getTasks() {
 }
 
 function taskStorage(){
-  localStorage.setItem("Tasks: ",JSON.stringify((tasks)));
+  localStorage.setItem("Tasks",JSON.stringify((tasks)));
 }
 
 function loadTask(){
