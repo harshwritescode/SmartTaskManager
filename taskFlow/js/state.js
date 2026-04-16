@@ -50,3 +50,15 @@ function editTask(id,newText){
 function getTasks() {
     return tasks;
 }
+
+function taskStorage(){
+  localStorage.setItem("Tasks: ",JSON.stringify((tasks)));
+}
+
+function loadTask(){
+  const data=localStorage.getItem("Tasks");
+
+  if(data){
+    tasks=JSON.parse(data);
+  }
+}
