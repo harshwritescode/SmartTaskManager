@@ -1,4 +1,13 @@
 let tasks=[];
+let currentFilter = "all";
+
+
+function getFilteredTasks() {
+    if (currentFilter === "all") return tasks;
+
+    return tasks.filter(task => task.status === currentFilter);
+}
+
 
 //addTask
 function addTask(text){ 
